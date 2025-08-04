@@ -3,13 +3,13 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-# http://127.0.0.1:8000/
-@app.get("/")
+# http://127.0.0.1:8000/helloworld
+@app.get("/helloworld")
 async def root():
     return {"message": "Hello World"}
 
 
-# http://127.0.0.1:8000/teste
-@app.get("/teste")
+# http://127.0.0.1:8000/funcaoteste
+@app.get("/funcaoteste")
 async def funcaoteste():
     return {"teste": "deu certo"}
