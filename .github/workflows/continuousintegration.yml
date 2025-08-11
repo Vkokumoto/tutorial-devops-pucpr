@@ -9,6 +9,9 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Install dependencies
+        run: pip install fastapi
+        
       - name: Check out code
         uses: actions/checkout@v4
 
