@@ -3,13 +3,23 @@ on:
     pull_request:
         branches:
             - main
+
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
-        
+        uses: actions/checkout@v4        
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
       - name: Python Lint Code Scanning Action
         uses: advanced-security/python-lint-code-scanning-action@v1.1.2
         with:
