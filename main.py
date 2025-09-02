@@ -19,4 +19,4 @@ async def root():
 @app.get("/funcaoteste")
 async def funcaoteste():
     '''Endpoint de teste que retorna um número aleatório e um valor booleano.'''
-    return {"teste": True, "num_aleatorio": random.randint(0, 50000)}
+    return {"teste": True, "num_aleatorio": random.randint(0, 55000)}
