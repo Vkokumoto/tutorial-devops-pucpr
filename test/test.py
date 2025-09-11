@@ -1,15 +1,15 @@
+"""Módulo de testes para a aplicação FastAPI do projeto."""
+
 from unittest.mock import patch
 import pytest
 
 from src.main import (
-    root, 
-    funcaoteste, 
-    create_estudante, 
-    update_estudante, 
-    delete_estudante, 
+    root,
+    funcaoteste,
+    create_estudante,
+    update_estudante,
+    delete_estudante,
     Estudante)
-
-"""Testes para a aplicação FastAPI do projeto."""
 
 @pytest.mark.asyncio
 async def test_root():

@@ -9,6 +9,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 class Estudante(BaseModel):
+    '''Classe estudante'''
     name: str
     curso: str
     ativo: bool
